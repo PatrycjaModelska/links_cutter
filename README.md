@@ -1,5 +1,7 @@
 # links_cutter
 
+See here and check how it works https://long-links-cutter.herokuapp.com/ or download app for your own computer.
+
 #### Requirements 
     1. Python 3.8
     2. Others packeges in file requirements.txt
