@@ -19,6 +19,7 @@ from shortlinks import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.Main_Page.as_view(), name='mainpage'),
     path('listoflinks', views.List_Of_Links.as_view(), name='listoflinks'),
     path('createshortlink/', views.Create_Short_Link.as_view(), name='creatshortlink'),
     path('<str:short_url>/', views.get_long_url, name='redirecttolongurl'),

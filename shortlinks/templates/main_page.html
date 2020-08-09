@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block title %}
+	<div class=row>
+		<div class="container"  style=" margin:10px">
+			<h4>Welcom, Long-Links-Cutter is here!</h4>
+		</div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class=row>
+		<div class="container"  style=" margin:10px">
+		<h6>What to do?</h6>
+		<a class="btn btn-primary" href="{% url 'listoflinks' %}" role="button">Check list of created shortlinks</a> or 
+		<a class="btn btn-primary" href="{% url 'creatshortlink' %}" role="button">Create short link</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container"  style=" margin:10px">
+		<h6>All links in our base: {{links|length}}!</h6>
+		</div>
+	</div>
+{% endblock %}

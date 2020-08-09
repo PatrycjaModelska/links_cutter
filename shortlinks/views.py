@@ -1,6 +1,7 @@
+import uuid
+
 from django.shortcuts import render, reverse, redirect, HttpResponse
 from django.views.generic import CreateView, ListView, DetailView
-import uuid
 
 from .forms import *
 
@@ -27,7 +28,6 @@ class Create_Short_Link(CreateView):
             self.object.short_url = str(uuid.uuid4())
             self.object.save()
             return super().form_valid(form)
-
         return HttpResponse("Link już istnieje")
 
     @property
@@ -38,6 +38,13 @@ class Create_Short_Link(CreateView):
 class List_Of_Links(ListView):
     model = Link
     template_name = "list_of_links.html"
+    context_object_name = "links"
+    paginate_by = 20
+
+
+class Main_Page(ListView):
+    model = Link
+    template_name = "main_page.html"
     context_object_name = "links"
 
 
