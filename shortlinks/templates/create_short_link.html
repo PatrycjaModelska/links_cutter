@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block title %}Skróć swój długi link:{% endblock %}
+
+{% block content %}
+
+		<form method="POST">{% csrf_token %}
+			<div class="post-form">
+				{% for field in form %}
+					<div class="field">
+						<h6> {{field.label_tag}}</h6>
+						<div class ="control">
+			    			{{ field }}
+			    		</div>
+			    	</div>
+			    	<br>
+			    {% endfor %}
+			</div> 
+			<br>
+
+				<button class = "btn btn-primary" type="submit">Stwórz krótki link</button>
+		</form>
+
+
+{% endblock %}

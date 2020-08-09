@@ -1,0 +1,5 @@
+Django
+django-heroku
+gunicorn
+whitenoise
+django-bootstrap4

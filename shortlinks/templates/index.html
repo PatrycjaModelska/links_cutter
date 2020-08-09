@@ -1,0 +1,31 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Links cuter</title>
+</head>
+<body>
+
+	<section>
+		<div class="container" style="margin-top:30px">
+		    <div class="row">
+		    	<h4> 
+					{% block title %}
+					{% endblock %}
+				</h4>
+			</div>
+			<div class="row">
+
+
+		              {% block content%}
+		              {% endblock %}
+		    </div>
+		</div>
+  	</section>
+
+
+</body>
+</html>

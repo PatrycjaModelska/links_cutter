@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block title %}Lista Twoich linków:{% endblock %}
+
+{% block content %}
+
+         {% for link in links %}
+                        <ul>
+                        {{ forloop.counter }} <a href="{% url 'redirecttolongurl' short_url=link.short_url %}"> http://127.0.0.1:8000/{{ link.short_url }}</a>  --> {{ link.long_url }} </ul>                  
+         {% endfor %}
+
+
+{% endblock %}
