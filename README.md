@@ -1,33 +1,22 @@
 # links_cutter
 
+#### Requirements 
+    1. Python 3.8
+    2. Others packeges in file requirements.txt
 
-### Uruchomienie projektu 
-    1. Wymagania sprzętowe:
+### First run
     
-            python 3.8
-            
-    2. Tworzenie środowiska w konsoli:
-    
+    1. Create virtualenv:
             python -m venv myvenv
             cd myvenv/Scripts/activate
-            
-    3. Ściąganie repozytorium:
-    
+    3. Pull repo:
             git clone https://github.com/PatrycjaModelska/Microblog.git
-    
-    4. Instalowanie wymaganych plików:
-    
-            pip install -r requirements.txt.
-    
-    5. Utworzenie superuser:
-    
+    4. Requirements install:
+            pip install -r requirements.txt
+    5. Create superuser:
             python manage.py createsuperuser
-    
-    6. Migracja danych do tabel w bazie:
-    
+    6. Migrete data to database:
             python manage.py makemigrations
             python manage.py migrate
-            
-    7. Uruchomienie serwera:
-    
+    7. Run server:
             python mamage.py runserver
