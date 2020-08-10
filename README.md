@@ -3,33 +3,34 @@
 Check how it works here: https://long-links-cutter.herokuapp.com/ or download app on your computer.
 
 #### Requirements 
-    1. Python 3.8
-    2. Others packeges in file requirements.txt
+
+1. Python 3.8
+2. Others packeges in file requirements.txt
 
 #### First run
+
+Create virtualenv:
     
-    1. Create virtualenv:
-    
-            python -m venv myvenv
-            cd myvenv/Scripts/activate
+    python -m venv myvenv
+    cd myvenv/Scripts/activate
             
-    2. Pull repo:
+Pull repo:
     
-            git clone https://github.com/PatrycjaModelska/Microblog.git
+    git clone https://github.com/PatrycjaModelska/Microblog.git
             
-    3. Install requirement packeges:
+Install requirement packeges:
     
-            pip install -r requirements.txt
+    pip install -r requirements.txt
             
-    4. Create superuser:
+Create superuser:
     
-            python manage.py createsuperuser
+    python manage.py createsuperuser
             
-    5. Migrete data to database:
+Migrete data to database:
     
-            python manage.py makemigrations
-            python manage.py migrate
+    python manage.py makemigrations
+    python manage.py migrate
             
-    6. Run server:
+Run server:
     
-            python mamage.py runserver
+    python mamage.py runserver
